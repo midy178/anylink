@@ -8,25 +8,30 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "1.11.0",
     "core-js": "^3.6.5",
     "echarts": "^4.9.0",
     "element-ui": "^2.4.5",
     "qs": "^6.11.1",
-    "vue": "^2.6.11",
+    "vue": "^3.5.18",
     "vue-count-to": "^1.0.13",
     "vue-router": "^3.5.2",
     "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-service": "^5",
+    "@vue/compiler-sfc": "^3",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "terser-webpack-plugin": "^5.3.14",
     "vue-cli-plugin-element": "~1.0.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^17",
+    "webpack": "^5",
+    "webpack-cli": "^3"
   },
   "eslintConfig": {
     "root": true,
@@ -46,5 +51,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }

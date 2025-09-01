@@ -44,7 +44,7 @@ func startDtls() {
 		Certificates:         []tls.Certificate{certificate},
 		ExtendedMasterSecret: dtls.DisableExtendedMasterSecret,
 		CipherSuites: func() []dtls.CipherSuiteID {
-			var cs = []dtls.CipherSuiteID{}
+			var cs []dtls.CipherSuiteID
 			for _, vv := range dtlsCipherSuites {
 				cs = append(cs, vv)
 			}
